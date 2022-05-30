@@ -1,5 +1,5 @@
 #include <glad/glad.h>
-#include <GLFW\glfw3.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 #include "Framebuffer.h"
 #include "Shader.h"
