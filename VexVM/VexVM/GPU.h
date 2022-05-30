@@ -16,10 +16,10 @@
 #include "Collider.h"
 
 struct GPUsettings {
-	float MAX_POINTS = 16000;
-	float MAX_LINES = 64000;
-	float MAX_SPRITES = 1024;
-	float MAX_PARTICLES = 1024;
+	int MAX_POINTS = 16000;
+	int MAX_LINES = 64000;
+	int MAX_SPRITES = 1024;
+	int MAX_PARTICLES = 1024;
 
 	double ASPECT_RATIO = 4.0 / 4.0;
 	bool DRAW_SCREEN = true;

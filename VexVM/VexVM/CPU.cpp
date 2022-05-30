@@ -107,7 +107,7 @@ void CPU::run(uint8_t* address) {
 	VStr* vs2;
 	int vi, ji, fi;
 	float f, f2, f3;
-	boolean b;
+	GLboolean b;
 
 	for (;;) {
 		uint8_t ins;
