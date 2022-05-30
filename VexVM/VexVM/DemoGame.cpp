@@ -1,4 +1,3 @@
-#pragma once
 #include "DemoGame.h"
 #include "util.cpp"
 #include "Vector.h"
