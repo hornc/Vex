@@ -15,11 +15,11 @@ void ParticleDef::Read(ROMReader* rom) {
 	f1 = rom->next4Float();
 	f2 = rom->next4Float();
 	float f3 = rom->next4Float();
-	color0 = VECTOR_VAL(f1,f2,f3);
+	color0 = COLOR_VAL(f1,f2,f3);
 	f1 = rom->next4Float();
 	f2 = rom->next4Float();
 	f3 = rom->next4Float();
-	color1 = VECTOR_VAL(f1,f2,f3);
+	color1 = COLOR_VAL(f1,f2,f3);
 	f1 = rom->next4Float();
 	f2 = rom->next4Float();
 	scale0 = VECTOR_VAL(f1,f2);
