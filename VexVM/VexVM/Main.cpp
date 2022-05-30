@@ -94,10 +94,11 @@ int main() {
 	return 0;
 }
 
+/*
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow) {
 	main();
 }
-
+*/
 
 // Callbacks
 
