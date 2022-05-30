@@ -10,8 +10,8 @@ ROMReader::ROMReader(const char* filename) {
 void ROMReader::Read(CPU* cpu, GPU* gpu, APU* apu, Input* input) {
 	std::cout << "reading ROM " << filename << std::endl;
 
-	std::basic_ifstream<BYTE> file(filename, std::ios::binary);
-	data = std::vector<BYTE>((std::istreambuf_iterator<BYTE>(file)), std::istreambuf_iterator<BYTE>());
+	std::ifstream file(filename, std::ios::binary);
+	data = std::vector<BYTE>((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
 	std::cout << "read " << data.size() << " bytes" << std::endl;
 	file.close();
 
