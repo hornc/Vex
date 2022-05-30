@@ -1,7 +1,7 @@
 #include "ROMReader.h"
-#include <windows.h>
+// #include <windows.h>
 #include <stdio.h>
-#include <tchar.h>
+// #include <tchar.h>
 
 ROMReader::ROMReader(const char* filename) {
 	this->filename = filename;
