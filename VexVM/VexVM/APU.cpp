@@ -163,18 +163,18 @@ void APU::Setup(int (*proxyCallback)(void* outBuffer, void* inBuffer, unsigned i
 	started = true;
 	std::cout << "APU initialized" << std::endl;
 
-	midi = new RtMidiIn();
-	unsigned int ports = midi->getPortCount();
+	// midi = new RtMidiIn();
+	unsigned int ports = 0; // midi->getPortCount();
 	if (ports < 1) {
 		std::cout << "APU detected no MIDI, aborting MIDI setup" << std::endl;
 		delete midi;
 		midi = nullptr;
-	} else {
+	} /*else {
 		midi->openPort(0);
 		midi->setCallback(midiCallback);
 		midi->ignoreTypes(true, true, true);
 		std::cout << "APU detected " << ports << " MIDI in, opened port 0 for listen" << std::endl;
-	}
+	}*/
 }
 
 void APU::Stop() {
