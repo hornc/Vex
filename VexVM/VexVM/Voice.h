@@ -1,6 +1,8 @@
 #pragma once
 
+#include <cmath>
 #include <iostream>
+
 class ROMReader;
 
 enum Waveform { TRIANGLE, SAWTOOTH, PULSE, SINE, NOISE };
